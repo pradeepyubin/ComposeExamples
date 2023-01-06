@@ -55,6 +55,7 @@ fun ComposeOutlinedTextField() {
     val textValue = remember { mutableStateOf("") }
     val primaryColor = colorResource(id = R.color.purple_200)
     OutlinedTextField(
+        maxLines = 1,
         label = { Text(text = stringResource(id =
         R.string.app_name)) },
         colors = TextFieldDefaults.outlinedTextFieldColors(
